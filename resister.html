@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="style.css">
+       	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+      
+      <title>Resister</title>
+      <style>
+            
+                @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+      	      *{
+      	            margin:0;
+      	            padding:0;
+      	            box-sizing:border-box;
+      	            border: 0px solid red;
+      	            font-family: 'Inter', sans-serif;
+      	            user-select: none;
+      	      }
+      	      .container{
+      	            max-width: 434px;
+      	            margin: 0 auto;
+      	          
+      	      }
+      	      .sub-head{
+      	            width:100%;
+      	            height:40px;
+      	            background:  #0092FF; 
+      	            padding-left:.5rem;
+      	            color:white; 
+      	            display: flex;
+      	            align-items: center;
+      	            justify-content: flex-start;
+      	            font-size: 1.1rem;
+      	      }
+      	       .sub-head a{
+      	            text-decoration:none;
+      	            color:white;
+      	      }
+      	      .sub-head i{
+      	            margin-top: .2rem;
+      	            margin-right: .7rem;      	            
+      	      }    
+      	      .wrapper{
+      	            width: 90%;
+      	            margin: 1.2rem auto;
+      	            display: flex;
+      	            align-items: center;
+      	            flex-direction: column;
+      	            justify-content: center;
+      	      }  	
+      	      .logo img{
+      	            width: 180px;
+      	      } 
+      	      .form{
+      	            width:100%;
+      	            color: var(--fade);    
+      	            margin-top:1rem;	                       
+      	      }  
+      	      .form form{
+      	             display: flex;
+      	             align-items: flex-start;
+      	             flex-direction: column;
+      	             justify-content: center;
+      	      }         	      
+      	      form i{
+      	            font-size: 1.4rem;
+      	      }
+      	      form .input-item{
+      	            display: flex;
+      	            justify-content: flex-start;
+      	            align-items: center;
+      	            margin: .3rem;
+      	      }
+      	      .input-item i{
+      	           margin-right: 1rem;
+      	      }
+      	      .input-item input{
+      	            outline: none;
+      	            padding: .5rem;
+      	            caret-color: rgba(0,0,0,0.6) ;
+      	            font-size:1.1rem;
+      	            display: flex;
+      	            display: flex;
+      	            justify-content: flex-start;
+      	            align-items: center;
+      	      }
+      	      #resister-btn{
+      	            width: 100%;
+      	            height: 45px;
+      	            margin-top: 1rem;
+      	            background:  /*#0092FF  */;
+      	            color: white;
+      	            font-size: 1.1rem;
+      	            border-radius: .5rem;
+      	            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      	            font-weight: 600;     	         
+      	      }
+      	      #OTP-btn{
+      	            text-decoration:none;
+      	            color:white;
+      	            padding :12px 15px;
+      	            border-radius:.5rem;
+      	            background:#00C283;
+      	            font-size : 1rem;
+      	            margin-right:.5rem;
+      	      }
+      	       #resister-btn i{
+      	            display:flex;
+      	            align-items:center;
+      	            justify-content:center;
+      	      }
+      	       .fi-rr-spinner{
+      	            animation: rotate .3s linear !important;
+      	      }
+      	      @keyframes rotate {
+      	            0%{
+      	            
+      	                  transform: rotateZ(0deg);
+      	            }
+      	            100%{      	             
+      	                  transform: rotateZ(180deg);
+      	                  
+      	            }
+      	      }
+      	      form ~ p{
+      	            margin:1rem ;
+      	            width:100%;
+      	            text-align:center;
+      	      }
+            p a{
+                  text-decoration:none;
+                  color:var(--primery);
+            }
+      </style>
+</head>
+<body>
+     
+    <div class="container"><!-- container -->
+            
+   <div class="sub-head"><a href="login.html"><i class="fi fi-rr-angle-left"></i> </a>  Resister </div>
+         <div class="wrapper" >
+               <div class="logo">
+                     <img src="/storage/emulated/0/Download/logo.png"> </img>
+               </div>
+               <div class="form">
+                   <form>
+                         <div class="input-item">
+                               <i class="fi fi-rr-circle-phone-flip"></i>
+                             +91  <input type="number" placeholder="Enter Mobile Number">
+                         </div>
+                         <div class="input-item">
+                              <i class="fi fi-rr-lock"></i>
+          <input type="password" placeholder="Login Password (&ge;6 Characters)">
+          
+                        </div>
+                        
+                         <div class="input-item">
+                              <i class="fi fi-rr-lock"></i>
+          <input type="password" placeholder="Confirm Password">
+          
+                        </div>
+    
+                         <div class="input-item">
+                             <i class="fi fi-rr-file-code"></i>                     
+          <input type="number" placeholder="Invite Code">
+          
+                        </div>     
+            
+            
+                        <div class="input-item">
+                              <i class="fi fi-rr-shield-check"></i>
+          <input type="number" placeholder="OTP">
+                             <a href="" id="OTP-btn">OTP</a>
+          
+                        </div>
+            
+            
+            
+                                            
+             <button   id="resister-btn" class="resisterbtn">Login</button>                   
+                   </form> 
+        <p> Already  have an account? <a href="login.html"> Log in</a></p>           
+        <p>
+            <input type="checkbox" name="" id="" checked>  
+              I Agree <a href="">PRIVACY POLICY</a>
+              
+        </p>            
+               </div>
+         </div>
+      </div><!-- end container -->
+<script>
+      let loader =`<i class="fi fi-rr-spinner"></i>`;
+      let loginBtn = document.querySelector('#resister-btn');
+     let input = document.querySelectorAll('.form input');
+          
+       
+       
+   function checkempty(){
+     if(input[0].value == "" || input[1].value== "" || input[2].value== "" || input[3].value =="" || input[4].value=="" ){
+           loginBtn.style.background="#A5A5A5";
+           loginBtn.disabled=true;
+     } 
+     else{
+           loginBtn.style.background="#0092FF"; 
+           loginBtn.disabled=false;
+     }    
+   }
+   checkempty();
+   
+   for(let i=0; i < 5; i++){
+         input[i].addEventListener("input", function(){
+               checkempty();
+         })
+   }
+     
+        loginBtn.onclick = function(){
+           loginBtn.innerHTML = loader;    
+           let i = document.querySelector('#resister-btn i');
+           i.classList.add('rotate');
+     }  
+         
+ 
+     
+    
+</script> 
+     
+     
+     
+     
+     
+     
+      
+</body>
+</html>
